@@ -1,0 +1,134 @@
+h2 {
+  color: #9f9f9f !important;
+}
+/* Slide 1 */
+.slide-1-container {
+  box-sizing: border-box;
+  /* width: 10%; */
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 2rem;
+  padding: 0 1rem;
+}
+.rounded-img {
+  box-sizing: border-box;
+  border-radius: 100%;
+  width: 16rem;
+  overflow: hidden;
+  border: 1.25rem solid var(--r-link-color);
+  min-width: 35%;
+}
+.text-align-container {
+  display: flex;
+  flex-direction: column;
+  column-gap: 2px;
+}
+.slide-1-container p {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+.slide-1-container .text-2 {
+  display: none;
+}
+@media only screen and (max-width: 640px) {
+  .slide-1-container .rounded-img {
+    width: 20rem;
+  }
+  .slide-1-container {
+    flex-direction: column;
+  }
+  .slide-1-container .text-1 {
+    display: none;
+  }
+  .slide-1-container .text-2 {
+    display: block;
+  }
+}
+
+/* Slide 2 */
+.slide-2-container {
+  display: flex;
+  flex-direction: column;
+  /* row-gap: -5.5rem; */
+  align-items: center;
+  /* padding: 0 5px; */
+}
+.slide-2-container > h2 {
+  padding-bottom: 2.5rem;
+}
+.slide-2-container > p {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+/* Slide 3 */
+.slide-3-container {
+  display: flex;
+  flex-direction: column;
+  /* row-gap: -5.5rem; */
+  align-items: center;
+}
+
+/* Slide 4 */
+.slide-4-container > div {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 3.5rem;
+  row-gap: 5rem;
+}
+.slide-4-container > h2 {
+  padding-bottom: 5rem;
+}
+.slide-4-container i {
+  font-size: 6rem;
+  color: white;
+}
+
+/* Slide 6 */
+.slide-6-container > div {
+  padding-top: 6rem;
+}
+.slide-6-container .hr {
+  border-top: 1px solid #979797;
+  width: 80%;
+  margin: auto;
+}
+.slide-6-container .vr {
+  border-left: 1px solid #979797;
+  width: 0.01%;
+  height: 55dvh;
+  display: none;
+}
+.slide-6-container img {
+  width: 70px;
+}
+.slide-6-container .social-container {
+  display: flex;
+  flex-flow: column;
+}
+.slide-6-container .social-container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2rem;
+}
+
+@media only screen and (min-width: 640px) {
+  .slide-6-container {
+    display: flex;
+    align-items: center;
+    column-gap: 4.5rem;
+    padding: 0 1rem;
+  }
+  .slide-6-container .hr {
+    display: none;
+  }
+  .slide-6-container .vr {
+    display: block;
+  }
+  .slide-6-container .social-container div {
+    justify-content: start;
+  }
+}
