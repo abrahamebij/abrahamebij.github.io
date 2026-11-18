@@ -1,5 +1,12 @@
 import Navbar from "./components/Navbar";
 import { useState } from "react";
+import Home from "./components/Home";
+import Contact from "./components/Contact";
+
+const screens = {
+  Home: <Home />,
+  Contact: <Contact />,
+};
 
 function App() {
   const [activeScreen, setActiveScreen] = useState("Home");
@@ -32,6 +39,7 @@ function App() {
             github.com/abrahamebij
           </a>
         </p>
+        {screens[activeScreen] || <Home />}
         <Navbar active={activeScreen} switchActive={setActiveScreen} />
       </div>
     </div>
