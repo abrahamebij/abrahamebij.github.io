@@ -1,6 +1,9 @@
 import Navbar from "./components/Navbar";
+import { useState } from "react";
 
 function App() {
+  const [activeScreen, setActiveScreen] = useState("Home");
+
   return (
     <div className="relative min-h-screen overflow-hidden flex">
       {/* Background Video */}
@@ -29,7 +32,7 @@ function App() {
             github.com/abrahamebij
           </a>
         </p>
-        <Navbar />
+        <Navbar active={activeScreen} switchActive={setActiveScreen} />
       </div>
     </div>
   );
