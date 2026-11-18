@@ -5,7 +5,7 @@ function App() {
   const [activeScreen, setActiveScreen] = useState("Home");
 
   return (
-    <div className="relative min-h-screen overflow-hidden flex">
+    <div className="relative h-dvh overflow-hidden flex">
       {/* Background Video */}
       <video
         autoPlay
