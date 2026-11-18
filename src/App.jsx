@@ -5,7 +5,7 @@ function App() {
   const [activeScreen, setActiveScreen] = useState("Home");
 
   return (
-    <div className="relative h-dvh overflow-hidden flex">
+    <div className="relative h-dvh overflow-hidden flex p-4">
       {/* Background Video */}
       <video
         autoPlay
@@ -20,7 +20,7 @@ function App() {
       </video>
 
       {/* Main Content*/}
-      <div className="relative p-4 flex flex-col flex-1">
+      <div className="relative flex flex-col flex-1">
         <h1 className="text-3xl font-semibold">Abraham Ebijuni</h1>
         <p>
           I'm currently doing a revamp of this portfolio. Should be up and
